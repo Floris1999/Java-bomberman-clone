@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<HBox fx:id="background" spacing="10" alignment="CENTER" prefWidth="800" prefHeight="800" fx:controller="controller.LoginController" xmlns:fx="http://javafx.com/fxml">
+
+    <padding><Insets top="200" right="25" bottom="10" left="25"/></padding>
+
+    <fx:define>
+        <Font fx:id="FONT" size="18" />
+    </fx:define>
+
+    <VBox>
+        <VBox spacing="10" alignment="CENTER">
+            <padding><Insets top="20" right="25" bottom="20" left="25"/></padding>
+            <TextField fx:id="player1" promptText="Username" />
+
+            <PasswordField fx:id="passwordPlayer1" promptText="password"/>
+
+            <Button id="Button1" text="Ready up player 1?" prefWidth="200" font="$FONT" onAction="#KlaarSpeler1" />
+            <padding><Insets top="30" right="25" bottom="30" left="25"/></padding>
+        </VBox>
+
+
+
+        <VBox spacing="10" alignment="CENTER">
+            <padding><Insets top="30" right="25" bottom="30" left="25"/></padding>
+            <TextField fx:id="player2"  promptText="Username" />
+
+            <PasswordField fx:id="passwordPlayer2" promptText="password"/>
+
+            <Button id="Button2" text="Ready up player 2?" prefWidth="200" font="$FONT" onAction="#KlaarSpeler2" />
+            <padding><Insets top="20" right="25" bottom="20" left="25"/></padding>
+        </VBox>
+
+        <VBox spacing="10" alignment="CENTER">
+            <Button id="previous" text="Return" prefWidth="200" font="$FONT" onAction="#previous" />
+            <padding><Insets top="20" right="25" bottom="20" left="25"/></padding>
+        </VBox>
+    </VBox>
+</HBox>
